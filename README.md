@@ -1,2 +1,2 @@
 # programs
-[a relative link](Bineary_search.py)
+[Binary search](Bineary_search.py)
