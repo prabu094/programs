@@ -29,7 +29,7 @@ def encode(key, s):
             res += '-'
         elif i.isspace():
             res += " "
-    return res.replace("!", " ")
+    return res
 
 
 print(encode(key, s))
