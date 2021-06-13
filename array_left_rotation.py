@@ -17,3 +17,4 @@ def rotLeft(a, d):
     alist = list(a)
     b = alist[d:]+alist[:d]
     return b
+print(rotLeft(a,n-1))
