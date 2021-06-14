@@ -26,12 +26,19 @@ def infix_to_postfix(expression):
 
 def infix_to_prefix(expression):
     s = expression[::-1]
-    s = s.replace('(', ')')
-    s = s.replace(')', '(')
+    s = [x for x in s]
+    for i in range(len(s)):
+        if s[i] == '(':
+            s[i] = ')'
+        elif s[i] == ')':
+            s[i] = '('
+
+    s = ''.join(s)
 
     return infix_to_postfix(s)[::-1]
 
 
 expression = input('Enter infix expression')
 print('infix expression: ', expression)
+
 print('prefix expression: ', infix_to_prefix(expression))
