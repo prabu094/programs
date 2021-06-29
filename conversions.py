@@ -1,0 +1,6 @@
+print("Binary to Decimal to conversion : ", int("101", 2))
+print("Binary to Octal to conversion : ", int("10111", 8))
+print("Binary to Hex to conversion : ", hex(int("101", 2)))
+print("Decimal to Binary conversion : ", str(bin(5))[2:])
+print("Decimal to octal Conversion : ", oct(5))
+print("Octal to Binary Conversion : ", str(bin(0o5))[2:])
